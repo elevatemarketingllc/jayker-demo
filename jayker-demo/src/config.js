@@ -34,7 +34,7 @@ export const config = {
   },
 
   hero: {
-    eyebrow: "Re-Wholesale Nursery — Nampa, Idaho — Est. 1978",
+    eyebrow: "Re-Wholesale Nursery — Nampa, ID — Est. 1978",
     heading1: "Growing Idaho",
     heading2: "Since 1978.",
     heading3: "",

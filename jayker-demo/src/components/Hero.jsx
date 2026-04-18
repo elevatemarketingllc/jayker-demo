@@ -73,11 +73,14 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="mb-4"
           style={{
-            fontSize: '0.65rem',
-            letterSpacing: '0.3em',
+            fontSize: '0.6rem',
+            letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: 'var(--color-accent)',
             fontFamily: 'DM Sans, sans-serif',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
           }}
         >
           {hero.eyebrow}
@@ -158,12 +161,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="inline-flex items-center gap-2 mb-8 self-start"
+          className="inline-flex items-center mb-8 self-start"
         >
-          <span
-            className="w-2 h-2 rounded-full animate-pulse"
-            style={{ backgroundColor: 'var(--color-accent)' }}
-          />
           <span
             style={{
               fontSize: '0.65rem',
@@ -172,7 +171,7 @@ export default function Hero() {
               color: 'var(--color-accent)',
               padding: '4px 12px',
               border: '1px solid rgba(196,137,46,0.4)',
-              borderRadius: '1px',
+              borderRadius: '4px',
             }}
           >
             {hero.badge}
@@ -184,15 +183,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-wrap gap-4 items-center"
+          className="flex flex-row gap-3 items-center"
         >
           <a
             href="#apply"
-            className="px-7 py-3.5 font-medium text-sm tracking-wide transition-all duration-200"
+            className="px-6 py-3.5 font-medium text-sm tracking-wide transition-all duration-200 text-center"
             style={{
               backgroundColor: 'var(--color-accent)',
               color: '#0C1A10',
-              borderRadius: '2px',
+              borderRadius: '6px',
+              flex: '1 1 0',
+              whiteSpace: 'nowrap',
             }}
             onMouseEnter={e => e.currentTarget.style.backgroundColor = 'var(--color-accent-light)'}
             onMouseLeave={e => e.currentTarget.style.backgroundColor = 'var(--color-accent)'}
@@ -201,15 +202,16 @@ export default function Hero() {
           </a>
           <a
             href={`tel:${config.business.phone}`}
-            className="px-7 py-3.5 text-sm tracking-wide transition-all duration-200"
+            className="px-6 py-3.5 text-sm tracking-wide transition-all duration-200 text-center"
             style={{
               color: 'var(--color-text-light)',
               border: '1px solid rgba(244,239,230,0.25)',
-              borderRadius: '2px',
+              borderRadius: '6px',
+              flex: '1 1 0',
+              whiteSpace: 'nowrap',
             }}
             onMouseEnter={e => {
               e.currentTarget.style.borderColor = 'rgba(244,239,230,0.6)'
-              e.currentTarget.style.color = 'var(--color-text-light)'
             }}
             onMouseLeave={e => {
               e.currentTarget.style.borderColor = 'rgba(244,239,230,0.25)'

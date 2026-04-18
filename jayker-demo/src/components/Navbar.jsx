@@ -79,7 +79,7 @@ export default function Navbar() {
               style={{
                 backgroundColor: 'var(--color-accent)',
                 color: '#0C1A10',
-                borderRadius: '2px',
+                borderRadius: '6px',
               }}
               onMouseEnter={e => e.target.style.backgroundColor = 'var(--color-accent-light)'}
               onMouseLeave={e => e.target.style.backgroundColor = 'var(--color-accent)'}

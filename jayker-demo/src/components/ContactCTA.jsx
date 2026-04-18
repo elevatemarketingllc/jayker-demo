@@ -187,7 +187,7 @@ export default function ContactCTA() {
                   style={{
                     backgroundColor: 'var(--color-accent)',
                     color: '#0C1A10',
-                    borderRadius: '2px',
+                    borderRadius: '6px',
                   }}
                   onMouseEnter={e => e.currentTarget.style.backgroundColor = 'var(--color-accent-light)'}
                   onMouseLeave={e => e.currentTarget.style.backgroundColor = 'var(--color-accent)'}
@@ -200,7 +200,7 @@ export default function ContactCTA() {
                   style={{
                     color: 'var(--color-text-light)',
                     border: '1px solid rgba(244,239,230,0.2)',
-                    borderRadius: '2px',
+                    borderRadius: '6px',
                   }}
                   onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(244,239,230,0.5)'}
                   onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(244,239,230,0.2)'}
