@@ -87,7 +87,7 @@ export default function Hero() {
         </motion.p>
 
         {/* Main headline */}
-        <div style={{ overflow: 'hidden', paddingTop: '0.3em', paddingBottom: '0.15em', marginBottom: '0' }}>
+        <div style={{ overflow: 'hidden', paddingTop: '0.3em', paddingBottom: '0.3em', marginBottom: '0' }}>
           <motion.h1
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
@@ -183,7 +183,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-row gap-3 items-center"
+          className="flex flex-col sm:flex-row gap-3"
         >
           <a
             href="#apply"
@@ -192,8 +192,6 @@ export default function Hero() {
               backgroundColor: 'var(--color-accent)',
               color: '#0C1A10',
               borderRadius: '6px',
-              flex: '1 1 0',
-              whiteSpace: 'nowrap',
             }}
             onMouseEnter={e => e.currentTarget.style.backgroundColor = 'var(--color-accent-light)'}
             onMouseLeave={e => e.currentTarget.style.backgroundColor = 'var(--color-accent)'}
@@ -207,15 +205,9 @@ export default function Hero() {
               color: 'var(--color-text-light)',
               border: '1px solid rgba(244,239,230,0.25)',
               borderRadius: '6px',
-              flex: '1 1 0',
-              whiteSpace: 'nowrap',
             }}
-            onMouseEnter={e => {
-              e.currentTarget.style.borderColor = 'rgba(244,239,230,0.6)'
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.borderColor = 'rgba(244,239,230,0.25)'
-            }}
+            onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(244,239,230,0.6)'}
+            onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(244,239,230,0.25)'}
           >
             {hero.ctaSecondary}
           </a>
