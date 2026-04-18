@@ -35,9 +35,9 @@ export const config = {
 
   hero: {
     eyebrow: "Re-Wholesale Nursery — Nampa, Idaho — Est. 1978",
-    heading1: "The Highlight",
-    heading2: "of the Week.",
-    heading3: "Every week. For 46 years.",
+    heading1: "Growing Idaho",
+    heading2: "Since 1978.",
+    heading3: "",
     subhead:
       "Cold-hardy plant material for Idaho's landscape professionals, municipalities, and developers. Wholesale only.",
     badge: "Professionals Only",

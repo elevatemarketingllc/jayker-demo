@@ -84,7 +84,7 @@ export default function Hero() {
         </motion.p>
 
         {/* Main headline */}
-        <div className="overflow-hidden mb-1">
+        <div style={{ overflow: 'hidden', paddingBottom: '0.15em', marginBottom: '0' }}>
           <motion.h1
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
@@ -92,7 +92,7 @@ export default function Hero() {
             className="font-display"
             style={{
               fontSize: 'clamp(2.5rem, 7vw, 5.5rem)',
-              lineHeight: 0.9,
+              lineHeight: 1.05,
               fontWeight: 400,
               color: 'var(--color-text-light)',
               letterSpacing: '-0.01em',
@@ -101,7 +101,7 @@ export default function Hero() {
             {hero.heading1}
           </motion.h1>
         </div>
-        <div className="overflow-hidden mb-2">
+        <div style={{ overflow: 'hidden', paddingBottom: '0.2em', marginBottom: '0.5rem' }}>
           <motion.h1
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
@@ -109,7 +109,7 @@ export default function Hero() {
             className="font-display italic"
             style={{
               fontSize: 'clamp(2.5rem, 7vw, 5.5rem)',
-              lineHeight: 0.9,
+              lineHeight: 1.05,
               fontWeight: 300,
               color: 'var(--color-accent)',
               letterSpacing: '-0.01em',
@@ -118,7 +118,8 @@ export default function Hero() {
             {hero.heading2}
           </motion.h1>
         </div>
-        <div className="overflow-hidden mb-8">
+        {hero.heading3 && (
+        <div style={{ overflow: 'hidden', paddingBottom: '0.15em', marginBottom: '2rem' }}>
           <motion.p
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
@@ -135,6 +136,7 @@ export default function Hero() {
             {hero.heading3}
           </motion.p>
         </div>
+        )}
 
         {/* Subhead */}
         <motion.p
