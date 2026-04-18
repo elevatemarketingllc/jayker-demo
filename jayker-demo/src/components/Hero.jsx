@@ -84,7 +84,7 @@ export default function Hero() {
         </motion.p>
 
         {/* Main headline */}
-        <div style={{ overflow: 'hidden', paddingBottom: '0.15em', marginBottom: '0' }}>
+        <div style={{ overflow: 'hidden', paddingTop: '0.12em', paddingBottom: '0.15em', marginBottom: '0' }}>
           <motion.h1
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
