@@ -14,7 +14,7 @@ export default function Footer() {
             <img
               src={images.logo}
               alt={business.name}
-              className="h-16 w-auto mb-4"
+              className="h-20 w-auto mb-4"
               style={{ filter: 'brightness(1.1)', mixBlendMode: 'screen' }}
             />
             <p

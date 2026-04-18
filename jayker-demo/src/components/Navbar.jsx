@@ -33,13 +33,13 @@ export default function Navbar() {
           borderBottom: scrolled ? '1px solid rgba(196,137,46,0.15)' : 'none',
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-24">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img
               src={config.images.logo}
               alt={config.business.name}
-              className="h-16 w-auto"
+              className="h-20 w-auto"
               style={{ filter: 'brightness(1.1)', mixBlendMode: 'screen' }}
             />
           </a>
