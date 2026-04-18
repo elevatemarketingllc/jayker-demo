@@ -91,7 +91,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="font-display"
             style={{
-              fontSize: 'clamp(4rem, 12vw, 9rem)',
+              fontSize: 'clamp(2.5rem, 7vw, 5.5rem)',
               lineHeight: 0.9,
               fontWeight: 400,
               color: 'var(--color-text-light)',
@@ -108,7 +108,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
             className="font-display italic"
             style={{
-              fontSize: 'clamp(4rem, 12vw, 9rem)',
+              fontSize: 'clamp(2.5rem, 7vw, 5.5rem)',
               lineHeight: 0.9,
               fontWeight: 300,
               color: 'var(--color-accent)',

@@ -40,7 +40,7 @@ export default function Navbar() {
               src={config.images.logo}
               alt={config.business.name}
               className="h-10 w-auto"
-              style={{ filter: 'brightness(1.1)' }}
+              style={{ filter: 'brightness(1.1)', mixBlendMode: 'screen' }}
             />
           </a>
 
@@ -50,20 +50,26 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm tracking-wide transition-colors duration-200"
-                style={{ color: 'var(--color-text-muted)' }}
-                onMouseEnter={e => e.target.style.color = 'var(--color-text-light)'}
-                onMouseLeave={e => e.target.style.color = 'var(--color-text-muted)'}
+                className="text-sm tracking-wide transition-all duration-200"
+                style={{
+                  color: '#ffffff',
+                  textShadow: '0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)',
+                }}
+                onMouseEnter={e => e.target.style.color = 'var(--color-accent)'}
+                onMouseLeave={e => e.target.style.color = '#ffffff'}
               >
                 {link.label}
               </a>
             ))}
             <a
               href={`tel:${config.business.phone}`}
-              className="text-sm tracking-wide transition-colors duration-200"
-              style={{ color: 'var(--color-text-muted)' }}
-              onMouseEnter={e => e.target.style.color = 'var(--color-text-light)'}
-              onMouseLeave={e => e.target.style.color = 'var(--color-text-muted)'}
+              className="text-sm tracking-wide transition-all duration-200"
+              style={{
+                color: '#ffffff',
+                textShadow: '0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)',
+              }}
+              onMouseEnter={e => e.target.style.color = 'var(--color-accent)'}
+              onMouseLeave={e => e.target.style.color = '#ffffff'}
             >
               {config.business.phone}
             </a>
